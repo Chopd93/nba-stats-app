@@ -1,0 +1,6 @@
+# Archivo de requisitos para la aplicación
+flask==2.3.3
+pandas==2.1.0
+requests==2.31.0
+nba_api==1.2.1
+gunicorn==21.2.0

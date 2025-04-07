@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Colores del logo PICSS FINEEES */
+:root {
+    --picss-dark-green: #0a4d2e;
+    --picss-light-green: #4caf50;
+    --picss-white: #ffffff;
+    --picss-black: #000000;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(to right, var(--picss-dark-green), var(--picss-dark-green)) !important;
+}
+
+header h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de las tarjetas */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+
+.card-header {
+    background: linear-gradient(to right, var(--picss-dark-green), var(--picss-light-green)) !important;
+    font-weight: 600;
+}
+
+/* Estilos para la tabla de estadísticas */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    background-color: var(--picss-dark-green);
+    z-index: 1;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Estilos para las tarjetas de promedios */
+#averages-container .card {
+    transition: transform 0.3s ease;
+}
+
+#averages-container .card:hover {
+    transform: translateY(-5px);
+}
+
+#averages-container .card-header {
+    background: linear-gradient(to right, var(--picss-dark-green), var(--picss-light-green)) !important;
+}
+
+#averages-container .display-4 {
+    font-weight: 700;
+    color: var(--picss-dark-green);
+}
+
+/* Estilos para el formulario de búsqueda */
+#player-search-form .btn-primary {
+    background-color: var(--picss-dark-green);
+    border-color: var(--picss-dark-green);
+}
+
+#player-search-form .btn-primary:hover {
+    background-color: var(--picss-light-green);
+    border-color: var(--picss-light-green);
+}
+
+/* Estilos para los botones de filtro */
+#stats-filter-form .btn-primary {
+    background-color: var(--picss-dark-green);
+    border-color: var(--picss-dark-green);
+}
+
+#stats-filter-form .btn-primary:hover {
+    background-color: var(--picss-light-green);
+    border-color: var(--picss-light-green);
+}
+
+#stats-filter-form .btn-outline-primary {
+    color: var(--picss-dark-green);
+    border-color: var(--picss-dark-green);
+}
+
+#stats-filter-form .btn-outline-primary:hover {
+    background-color: var(--picss-light-green);
+    border-color: var(--picss-light-green);
+    color: white;
+}
+
+#stats-filter-form .btn-check:checked + .btn-outline-primary {
+    background-color: var(--picss-dark-green);
+    border-color: var(--picss-dark-green);
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: linear-gradient(to right, var(--picss-dark-green), var(--picss-dark-green)) !important;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #player-info .col-md-3 {
+        margin-bottom: 20px;
+    }
+    
+    #averages-container .col-md-3 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
